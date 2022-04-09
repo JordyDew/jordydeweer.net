@@ -17,11 +17,11 @@ jobs:
         with:
           hugo-version: "0.96.0"
       - name: Build
-        run: hugo -b https://jordydeweer.net -E --cleanDestinationDir -d public/ --gc --minify --verbose
+        run: hugo -b https://jordydeweer.net -E
       - name: Deploy
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
         with:
-          ftp-server: jordydeweer.net/domains/jordydeweer.net/public_html
+          ftp-server: jordydeweer.net/domains/jordydeweer.net/public_html/
           ftp-username: ${{ secrets.FTP_USERNAME }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           local-dir: public/
