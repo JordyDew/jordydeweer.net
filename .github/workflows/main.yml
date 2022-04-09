@@ -19,10 +19,10 @@ jobs:
       - name: Build
         run: hugo -b https://jordydeweer.net -E
       - name: Deploy
-          uses: sebastianpopp/ftp-action@releases/v2
-          with:
-            host: "jordydeweer.net"
-            user: ${{ secrets.FTP_USERNAME }}
-            password: ${{ secrets.FTP_PASSWORD }}
-            localDir: "public"
-            remoteDir: "domains/jordydeweer.net/public_html"
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+          host: "jordydeweer.net"
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: "public"
+          remoteDir: "domains/jordydeweer.net/public_html"
