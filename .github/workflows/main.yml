@@ -20,7 +20,7 @@ jobs:
         run: hugo -b https://jordydeweer.net -E
       - name: Deploy
         #uses: SamKirkland/FTP-Deploy-Action@3.0.0
-        with:
+        #with:
           ftp-server: jordydeweer.net/domains/jordydeweer.net/public_html/
           ftp-username: ${{ secrets.FTP_USERNAME }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
