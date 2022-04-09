@@ -17,7 +17,7 @@ jobs:
         with:
           hugo-version: "0.96.0"
       - name: Build
-        run: hugo -b https://jordydeweer.net -E
+        run: hugo -b https://jordydeweer.net/ -E
       - name: Deploy
         uses: sebastianpopp/ftp-action@releases/v2
         with:
