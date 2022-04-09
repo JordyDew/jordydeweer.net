@@ -1,0 +1,32 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 8 * * *"
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          submodules: true
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.96.0"
+
+      - name: Build
+        run: hugo -b https://jordydeweer.net -E --cleanDestinationDir -d public/ --gc --minify --verbose
+
+      - name: Deploy
+        uses: SamKirkland/FTP-Deploy-Action@3.0.0
+        with:
+          ftp-server: jordydeweer.net/domains/jordydeweer.net/public_html
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: public/
