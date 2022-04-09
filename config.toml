@@ -1,6 +1,5 @@
 baseurl = "/"
 title = "Jordy Deweer's .NET Blog"
-theme = "ghostwriter"
 disqusShortname = "jordy-deweers-net-blog"
 [Params]
     mainSections = ["blog"]
