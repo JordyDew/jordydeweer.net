@@ -1,0 +1,19 @@
+baseurl = "/"
+title = "Jordy Deweer's .NET Blog"
+theme = "ghostwriter"
+disqusShortname = "jordy-deweers-net-blog"
+[Params]
+    mainSections = ["blog"]
+    intro = false
+    headline = "Welcome to my .NET blog"
+    description = "A blog about the entire .NET Stack, incluuding ASP.NET Core, APIs, Xamarin, MAUI and so much more"
+    github = "https://github.com/jordydew"
+    twitter = "https://twitter.com/jdewjordy"
+    email = "contact@jordydeweer.net"
+    opengraph = true
+    shareTwitter = false
+    dateFormat = "Mon, January 2, 2006"
+
+[Permalinks]
+    blog = "/:year/:month/:day/:filename/"
+

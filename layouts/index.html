@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<div id="post-index" class="container" itemscope="" itemtype="https://schema.org/Blog">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name">{{ .Site.Params.headline }}</h1>
+        <p>{{ .Site.Params.description }}</p>
+    </header>
+
+    <ol class="post-list">
+        {{ $pag := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+        {{ range $pag.Pages }}
+            {{ partial "post-stub.html" . }}
+        {{ end }}
+    </ol>
+
+    <div class="post-navigation">
+        {{ partial "pagination.html" . }}
+    </div>
+</div>
+
+{{ partial "footer.html" . }}
