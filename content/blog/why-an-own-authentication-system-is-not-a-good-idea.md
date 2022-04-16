@@ -1,6 +1,6 @@
 +++
 title = "Why an Own Authentication System Is Not a Good Idea"
-description = "Developing an own authentication system is not a good idea. Here is why."
+description = ""
 author = "Jordy Deweer"
 date = 2022-04-16T23:38:33+02:00
 tags = []
