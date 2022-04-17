@@ -4,6 +4,7 @@ description = ""
 author = "Jordy Deweer"
 date = 2022-04-17T22:03:34+02:00
 tags = ["projects","Notetaker"]
+drqft - true
 +++
 
 Now, it is time for a first project. As you may know, I'm visually impaired and sometimes, it is hard to take notes. I want to build a simple note taking application and I will share the process in my blog with you.
