@@ -1,8 +1,8 @@
 +++
-title = "Notetaker 1 the Project"
+title = "Notetaker 1: The Project"
 description = ""
-author = ""
+author = "Jordy Deweer"
 date = 2022-04-17T15:30:34+02:00
-tags = []
+tags = ["projects"]
 draft = true
 +++
