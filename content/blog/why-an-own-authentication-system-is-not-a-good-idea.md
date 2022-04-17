@@ -4,7 +4,7 @@ description = ""
 author = "Jordy Deweer"
 date = 2022-04-17T15:28:33+02:00
 tags = ["authentication","authorization","identity management"]
-draft = true
+draft = false
 +++
 
 Developing an own authentication system is a very bad idea. It's a big security risk you don't want to take, unless there's a very specific use case or need to do so.
