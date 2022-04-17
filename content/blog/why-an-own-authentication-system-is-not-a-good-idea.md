@@ -2,8 +2,8 @@
 title = "Why an Own Authentication System Is Not a Good Idea"
 description = ""
 author = "Jordy Deweer"
-date = 2022-04-17T15:09:33+02:00
-tags = []
+date = 2022-04-17T15:28:33+02:00
+tags = ["authentication","authorization","identity management"]
 draft = true
 +++
 
